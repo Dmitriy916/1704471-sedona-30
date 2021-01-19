@@ -1,6 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Мазаев](https://up.htmlacademy.ru/htmlcss/30/user/1704471).
+* Наставник: Антон Леонов.
 * Наставник: [Anton Leonov] (https://htmlacademy.ru/profile/id101137).
 
 ---
