@@ -107,21 +107,39 @@
          </ul>
          <form action="https://echo.htmlacademy.ru" method="POST">
             <button tabindex="0">поиск гостиницы в седоне</button>
-            <div>
-               <label for="#">Дата заезда:</label>
-               <input type="text" id="#" name="arrival date" placeholder="24 Апреля 2017" >
-            </div>
-            <div>
-               <label for="#">Дата выезда:</label>
-               <input id="#" name="departure date" placeholder="4 июля 2017">
-            </div>
-
-
+         <div>
+               <div>
+                  <label for="arrival">Дата заезда:</label>
+                  <input type="date" id="arrival" name="arrival date" placeholder="24 Апреля 2017" >
+                  <button type="button"></button>
+               </div>
+               <div>
+                  <label for="departure">Дата выезда:</label>
+                  <input type="date" id="departure" name="departure date" placeholder="4 июля 2017">
+                  <button type="button"></button>
+               </div>
+               <div>
+                  <label for="adults">Взрослые</label>
+                  <button type="button"><span>-</span></button>
+                  <input id="adults" type="number" min="1" max="10">
+                  <button type="button"><span>+</span></button>
+               </div>
+               <div>
+                  <label for="children">Дети</label>
+                  <button type="button"><span>-</span></button>
+                  <input id="children" type="number" min="1" max="10">
+                  <button type="button"><span>+</span></button>
+               </div>
+               <div>
+                  <button type="submit" >Найти</button>
+               </div>
+         </div>
          </form>
       </section>
 </main>
 <footer>
    <section>
+      <h2>Контактная информация</h2>
       <p><a href="#">#visitsedona</a></p>
       <p>
          ТЕЛ: <a href="tel:+79456660166">+7(495) 666-01-66</a>
@@ -140,14 +158,14 @@
          </li>
       </ul>
    </section>
+   <section>
       <p>Website by</p>
-         <a href="https://htmlacademy.ru">
-            <img src="https://via.placeholder.com/115x41" width="115" height="41" alt="Логотип htmlacademy">
-         </a>
+      <a href="https://htmlacademy.ru">
+         <img src="https://via.placeholder.com/115x41" width="115" height="41" alt="Логотип htmlacademy">
+      </a>
+   </section>
 
 </footer>
-
-
 
   </body>
 </html>
