@@ -1,180 +1,175 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="icon" href="img/Favicon.ico">
-    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+   <meta charset="utf-8">
+   <title>HTML Academy: Седона</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="icon" href="img/Favicon.ico">
+   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+   <link rel="apple-touch-icon" href="favicon/180.png">
+   <link rel="manifest" href="manifest.webmanifest">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+</head>
 
-<header>
-      <nav>
-         <ul>
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="catalog.html">Фото и видео</a></li>
-            <li>
-               <a href="index.html">
-                  <img src="img/logo.png" widht="138" height="70" alt="Логотип Sedona">
-               </a>
-            </li>
-            <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="blank.html">Гостиницы</a></li>  
-            </ul>
+<body class="page__body">
+
+   <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
+         href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+
+   <header class="main__header">
+      <nav class="main__navigation">
+         <div class="cite__navigation">
+            <a class="nav__link" href="blank.html">Информация</a>
+            <a class="nav__link" href="catalog.html">Фото и видео</a>
+            <a class="nav__link" href="index.html">
+            <img src="img/logo.svg" widht="138" height="70" alt="Логотип Sedona">
+            </a>
+            <a class="nav__link" href="blank.html">Карта штата</a>
+            <a class="nav__link" href="blank.html">Гостиницы</a>
+         </div>
       </nav>
-</header>
-   <main>
-      <section>
+   </header>
+   <main class="container">
+      <section class="background__foto">
          <img src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="Foto Sedona">
          <img src="https://via.placeholder.com/458x350" width="458" height="350" alt="Welcome to Sedona">
       </section>
-      <section>
-         <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <section class="content">
+         <h2 class="content__head">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+         <p class="content__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
-      <section>
-         <h2>Городок Седона</h2>
-            <div>
-               <div>
-                  <h2>Настоящий<br>городок</h2>
-                  <p>— №1 —</p>
-                  <p>Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
-               </div>
-            </div>
+      <section class="city">
          <div>
-            <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Фото города">
+            <div>
+               <h2 class="real__city">Настоящий<br>городок</h2>
+               <p class="city__number">— №1 —</p>
+               <p class="text__city">Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
+            </div>
+         </div>
+         <div>
+            <img class="city__foto" src="https://via.placeholder.com/800x256" width="800" height="256" alt="Фото города">
          </div>
       </section>
-      <section>
-         <h2>Что мы предлагаем</h2>
-         <div>
-            <div>
-               <img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка дома">
+      <section class="offers">
+         <div class="block">
+            <div class="title">
+               <img src="img/iconhome.svg" width="75" height="72" alt="Иконка дома">
                <h2>Жильё</h2>
                <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
             </div>
-            <div>
-               <img src="https://via.placeholder.com/75x70" width="75" height="70" alt="Питание">
+            <div class="subtitle">
+               <img src="img/iconfood.svg" width="75" height="70" alt="Питание">
                <h2>Еда</h2>
                <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
             </div>
-            <div>
-               <img src="https://via.placeholder.com/64x77" width="64" height="77" alt="Сувениры">
+            <div class="block__subtitle">
+               <img src="img/iconsouvenirs.svg" width="64" height="77" alt="Сувениры">
                <h2>Сувениры</h2>
                <p>Не только китайского, но и местного<br>производства!</p>
             </div>
          </div>
       </section>
-      <section>
+      <section class="davil-bridge">
          <div>
-            <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Мост дьявола">
+            <img class="images-bridge" src="https://via.placeholder.com/800x256" width="800" height="256" alt="Мост дьявола">
+         </div class="bridge">
+         <div>
+            <h2 class="title__bridge">Там есть<br>Мост дьявола</h2>
+            <p class="number__bridge">— №2 —</p>
+            <p class="text__bridge">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
          </div>
-         <ul>
-            <li>
-               <h2>Там есть<br>Мост дьявола</h2>
-               <p>— №2 —</p>
-               <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
-            </li>
-         </ul>
       </section>
-      <section>
-         <div>
-            <div>
+      <section class="features">
+         <div class="fetures__list">
+            <div class="features__item">
                <h2>небольшая<br>площадь</h2>
                <p>— №3 —</p>
                <p>все достопримечательности находятся очень близко</p>
             </div>
-            <div>
+            <div class="features__title">
                <h2>красивая<br>дорога</h2>
                <p>— №4 —</p>
                <p>ехать в седону из лас-вегаса совсем не скучно!</p>
             </div>
-            <div>
+            <div class="features__subtitle">
                <h2>мало<br>туристов</h2>
                <p>— №5 —</p>
                <p>большинство едет в гранд каньон и толпится там</p>
             </div>
          </div>
       </section>
-      <section>
-         <h2>Гостиницы</h2>
-         <ul>
-            <li>
+      <section class="search-section">
+            <div class="search-section__head">
                <h2>Заинтересовались?</h2>
                <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            </li>
-         </ul>
+            </div>
          <form action="https://echo.htmlacademy.ru" method="POST">
-            <button tabindex="0">поиск гостиницы в седоне</button>
-         <div>
-               <div>
+            <button class="search-section__button" tabindex="0">поиск гостиницы в седоне</button>
+            <div class="button-block">
+               <div class="block-date">
                   <label for="arrival">Дата заезда:</label>
-                  <input type="date" id="arrival" name="arrival date" placeholder="24 Апреля 2017" >
-                  <button type="button"></button>
+                  <input type="date" id="arrival" name="arrival date" placeholder="24 Апреля 2017">
                </div>
-               <div>
+               <div class="block-date">
                   <label for="departure">Дата выезда:</label>
                   <input type="date" id="departure" name="departure date" placeholder="4 июля 2017">
-                  <button type="button"></button>
                </div>
-               <div>
+               <div class="block-adults">
                   <label for="adults">Взрослые</label>
-                  <button type="button"><span>-</span></button>
-                  <input id="adults" type="number" min="1" max="10">
-                  <button type="button"><span>+</span></button>
+                  <button class="button button-minus" type="button"><span>-</span></button>
+                  <input id="adults" type="number" min="1" max="10" placeholder="2">
+                  <button class="button button-plus" type="button"><span>+</span></button>
                </div>
-               <div>
+               <div class="block-children">
                   <label for="children">Дети</label>
-                  <button type="button"><span>-</span></button>
-                  <input id="children" type="number" min="1" max="10">
-                  <button type="button"><span>+</span></button>
+                  <button class="button button-minus" type="button"><span>-</span></button>
+                  <input id="children" type="number" min="1" max="10" placeholder="0">
+                  <button class="button button-plus" type="button"><span>+</span></button>
                </div>
-               <div>
-                  <button type="submit" >Найти</button>
+               <div class="btn-submit">
+                  <button class="btn" type="submit">Найти</button>
                </div>
-         </div>
+            </div>
          </form>
       </section>
-</main>
-<footer>
-   <section>
-      <h2>Контактная информация</h2>
-      <p><a href="#">#visitsedona</a></p>
-      <p>
-         ТЕЛ: <a href="tel:+79456660166">+7(495) 666-01-66</a>
-      </p>
-   </section>
-   <section>
-      <ul>
-         <li>
-            <a href="https://twitter.com/">Твиттер
-               <img src="img/twitter.png" alt="Логотип twitter">
-            </a>
-         </li>
-         <li>
-            <a href="https://www.facebook.com/">Фейсбук
-               <img src="img/fb-icon.png" alt="Логтип facebook">
-            </a>
-         </li>
-         <li>
-            <a href="https://www.youtube.com/">Ютуб
-               <img src="img/youtube.png" alt="Логотип Youtube">
-            </a>
-         </li>
-      </ul>
-   </section>
-   <section>
-      <p>Website by</p>
-      <a href="https://htmlacademy.ru">
-         <img src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип htmlacademy">
-      </a>
-   </section>
+   </main>
+   <footer class="main__footer">
+      <section class="footer__contact">
+         <p><a href="#">#visitsedona</a></p>
+         <p class="contact__phone">
+            ТЕЛ: <a href="tel:+79456660166">+7(495) 666-01-66</a>
+         </p>
+      </section>
+      <section class="footer__social">
+         <ul class="social">
+            <li>
+              <a class="social__button" href="https://twitter.com/" target="blank">
+                  <img src="img/twitter.svg" alt="Логотип twitter">
+               </a>
+            </li>
+            <li>
+               <a class="social__button" href="https://www.facebook.com/" target="blank">
+                  <img src="img/fb-icon.svg" alt="Логтип facebook">
+               </a>
+            </li>
+            <li>
+               <a class="social__button" href="https://www.youtube.com/" target="blank">
+                  <img src="img/youtube.svg" alt="Логотип Youtube">
+               </a>
+            </li>
+         </ul>
+      </section>
+      <section class="footer__website">
+         <p>Website by</p>
+         <a href="https://htmlacademy.ru" target="blank">
+            <img class="footer-img" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+         </a>
+      </section>
 
-</footer>
+   </footer>
 
-  </body>
+</body>
+
 </html>
