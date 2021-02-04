@@ -1,3 +1,8 @@
+
+.page{
+  height: 100%;
+}
+
 /* Variables */
 :root{
   --basic-black: #000000;
@@ -10,6 +15,15 @@ body{
   padding: 0;
   font-family: 'PT Sans', sans-serif;
   color: var(--basic-black)
+}
+.page__body{
+width: 1200px;
+font-family: 'PT Sans', sans-serif;
+min-height: 100%;
+display: grid;
+grid-template-rows: min-content 1fr min-content;
+align-content: start;
+text-transform: uppercase;
 }
 
 img {
@@ -25,18 +39,22 @@ img {
 
 
 /* Navigation */
+.header-logo{
+text-align: center;
+}
 .cite__navigation{
   list-style: none;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .nav__link{
   color: var(--basic-black);
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
   padding-left: 100px;
+  margin-top: 15px;
 }
 .nav__link::before{
   color: var(--basic-black);
@@ -54,186 +72,189 @@ img {
   font-size: 21px;
 }
 
+/* background__foto */
 
 /* Content */
 .content{
   text-align: center;
 }
 .content__head{
-  font-family: 'PT Sans', sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .content__text{
-  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
-  text-transform: uppercase;
+}
+/* Catalog block*/
+
+
+/* filter-section */
+.infrastructure-block{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  text-align: center;
+  vertical-align: middle;
 }
 
 
 /* City */
+.city{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 50px 0px 50px 0px;
+}
+.city-block{
+text-align: center;
+margin-left: 30px;
+}
 .real__city{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .sity__number{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 .text__city{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 
 
  /* Offers */
+.block{
+margin: 20px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+text-align: center;
+margin: 50px 0px 50px 0px;
+}
 .title h2{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .title p{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 .subtitle h2{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .subtitle p{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 .block__subtitle h2{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .block__subtitle p{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 
 /* davil-bridge */
+.davil-bridge{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.bridge-block{
+  text-align: center;
+margin-right: 30px;
+}
 .title__bridge{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .number__bridge{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 .text__bridge{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 
 
 /* features */
+.fetures__list{
+  text-align: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 50px 0px 50px 0px;
+}
 .features__item h2{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .features__item p{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 .features__title h2{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .features__title p{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 .features__subtitle h2{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 21px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .features__subtitle p{
-font-family: 'PT Sans', sans-serif;
-font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 
 /* search-section */
+.search-block{
+text-align: center;
+}
+.search-section__head{
+text-align: center;
+}
 .search-section__head h2{
-font-family: 'PT Sans', sans-serif;
 font-size: 30px;
 line-height: 24px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .search-section__head p{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-text-transform: uppercase;
 }
 .search-section__button{
 color: #FFFFFF;
 background: #766357;
 font-family: 'PT Sans', sans-serif;
+width: 568px;
+height: 86px;
 font-size: 21px;
 line-height: 26px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .search-section__button::before{
 color: #FFFFFF;
@@ -242,7 +263,6 @@ font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 26px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .search-section__button:hover{
 color: #FFFFFF;
@@ -251,7 +271,6 @@ font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 26px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .search-section__button::after{
 color: #FFFFFF;
@@ -260,37 +279,30 @@ font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 26px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .block-date{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 26px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .block-adults label{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 26px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .block-children label{
-font-family: 'PT Sans', sans-serif;
 font-size: 14px;
 line-height: 26px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .btn{
 color: #FFFFFF;
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 27px;
+width: 458px;
+height: 58px;
 background-color: var(--basic-blue);
 font-weight: bold;
-text-transform: uppercase;
 }
 .btn:before{
 color: #FFFFFF;
@@ -299,7 +311,6 @@ font-size: 21px;
 line-height: 27px;
 background-color:var(--basic-blue);
 font-weight: bold;
-text-transform: uppercase;
 }
 .btn:hover{
 color: #FFFFFF;
@@ -308,7 +319,6 @@ font-size: 21px;
 line-height: 27px;
 background-color: #669EC0;
 font-weight: bold;
-text-transform: uppercase;
 }
 .btn:after{
 color: #FFFFFF;
@@ -317,25 +327,26 @@ font-size: 21px;
 line-height: 27px;
 background-color: #5496BD;
 font-weight: bold;
-text-transform: uppercase;
 }
 
 
 /* Footer */
+.main__footer{
+text-align: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
 .footer__contact a{
 color: var(--basic-black);
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 26px;
 font-weight: bold;
 text-transform: uppercase;
 }
 .contact__phone{
-font-family: 'PT Sans', sans-serif;
 font-size: 21px;
 line-height: 26px;
 font-weight: bold;
-text-transform: uppercase;
 }
 .social{
   list-style: none;
@@ -354,12 +365,10 @@ text-transform: uppercase;
   background-color: #5496BD;
 }
 .footer__website p{
-font-family: 'PT Sans', sans-serif;
 columns: var(--basic-black);
 font-size: 14px;
 line-height: 26px;
 font-weight: normal;
-text-transform: uppercase;
 }
 .footer-img{
 color: #231F20;
