@@ -43,6 +43,8 @@ padding-left: 100px;
 margin-top: 15px;
 }
 .nav-logo{
+position: relative;
+z-index: 1;
 width: 138px;
 height: 70px;
 }
@@ -58,7 +60,7 @@ opacity: 0.3;
 
 /* Container */
 .container{
-width: 1200px;
+max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
 }
@@ -66,19 +68,20 @@ margin-right: auto;
 font-size: 21px;
 }
 
-/* background__foto */
-.background-img{
+/* hero */
+.hero{
+background: url(../img/background\ photo.jpg);
 position: absolute;
-width: 1200px;
+max-width: 1200px;
 height: 509px;
+transform: translate(0, -15px);
 }
-.decoration-foto{
-width: 1200px;
+.hero__shape{
+max-width: 1200px;
 height: 57px;
 position: relative;
-bottom: -25px;
 }
-.background-images{
+.hero__welcome{
 position: relative;
 margin-top: 77px;
 margin-left: 371px;
@@ -113,6 +116,7 @@ margin-right: auto;
 /* filter-section */
 .filter-img{
 position: absolute;
+transform: translate(0, -15px);
 }
 .infrastructure-block{
 color: #ffffff;
@@ -451,6 +455,7 @@ font-weight: bold;
 text-align: center;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
+background: rgba(255, 255, 255, 0.9);
 }
 .footer__contact a{
 color: var(--basic-black);
@@ -458,6 +463,7 @@ font-size: 21px;
 line-height: 26px;
 font-weight: bold;
 text-transform: uppercase;
+text-decoration: none;
 }
 .contact__phone{
 font-size: 21px;
@@ -481,7 +487,7 @@ background-color:  #669EC0;
 .social__button:after{
 background-color: #5496BD;
 }
-.footer-title{
+/*.footer-title{
 display: flex;
 width: 74px;
 margin-top: auto;
@@ -490,8 +496,11 @@ font-size: 14px;
 line-height: 26px;
 font-weight: normal;
 }
-.footer-img{
+ .footer-img{
 display: flex;
 margin-left: 10px;
 color: #231F20;
+} */
+.footer__website{
+display: flex;
 }
