@@ -23,7 +23,7 @@
             <img class="nav-logo" src="img/logo.svg" widht="138" height="70" alt="Логотип Sedona">
             </a>
             <a class="nav__link" href="blank.html">Карта штата</a>
-            <a class="nav__link" href="blank.html">Гостиницы</a>
+            <a class="nav__link" href="catalog.html">Гостиницы</a>
          </div>
       </nav>
    </header>
@@ -31,6 +31,7 @@
       <section class="background__foto">
          <img class="background-img" src="img/background photo.jpg" width="1200" height="509" alt="Foto Sedona">
          <img class="background-images" src="img/welcome.png" width="458" height="350" alt="Welcome to Sedona">
+         <img class="decoration-foto" src="img/Shape.svg" width="1200" height="57">
       </section>
       <section class="content">
          <h2 class="content__head">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -45,7 +46,7 @@
             </div>
          </div>
          <div>
-            <img class="city__foto" src="https://via.placeholder.com/800x256" width="800" height="256" alt="Фото города">
+            <img class="city__foto" src="img/image (1).jpg" width="800" height="256" alt="Фото города">
          </div>
       </section>
       <section class="offers">
@@ -69,7 +70,7 @@
       </section>
       <section class="davil-bridge">
          <div>
-            <img class="images-bridge" src="https://via.placeholder.com/800x256" width="800" height="256" alt="Мост дьявола">
+            <img class="images-bridge" src="img/image 2.jpg" width="800" height="256" alt="Мост дьявола">
          </div>
          <div class="bridge-block">
             <h2 class="title__bridge">Там есть<br>Мост дьявола</h2>
@@ -101,35 +102,37 @@
                <h2>Заинтересовались?</h2>
                <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </div>
-         <form action="https://echo.htmlacademy.ru" method="POST">
-          <div class="search-block">
-            <button class="search-section__button" tabindex="0">поиск гостиницы в седоне</button>
-            <div class="button-block">
-               <div class="block-date">
-                  <label for="arrival">Дата заезда:</label>
-                  <input type="date" id="arrival" name="arrival date" placeholder="24 Апреля 2017">
-               </div>
-               <div class="block-date">
-                  <label for="departure">Дата выезда:</label>
-                  <input type="date" id="departure" name="departure date" placeholder="4 июля 2017">
-               </div>
-               <div class="block-adults">
-                  <label for="adults">Взрослые</label>
-                  <button class="button button-minus" type="button"><span>-</span></button>
-                  <input id="adults" type="number" min="1" max="10" placeholder="2">
-                  <button class="button button-plus" type="button"><span>+</span></button>
-               </div>
-               <div class="block-children">
-                  <label for="children">Дети</label>
-                  <button class="button button-minus" type="button"><span>-</span></button>
-                  <input id="children" type="number" min="1" max="10" placeholder="0">
-                  <button class="button button-plus" type="button"><span>+</span></button>
-               </div>
-               <div class="btn-submit">
-                  <button class="btn" type="submit">Найти</button>
-               </div>
-            </div>
-          </div>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <div class="search-block">
+                    <button class="search-section__button" tabindex="0">поиск гостиницы в седоне</button>
+                <div class="button-block">
+                  <div class="block-date">
+                    <label class="date-arrival" for="arrival">Дата заезда:</label>
+                    <input class="input-date__arrival" type="date" id="arrival" name="arrival date" placeholder="24 Апреля 2017">
+                  </div>
+                  <div class="block-date">
+                    <label for="departure">Дата выезда:</label>
+                    <input class="input-date__departure" type="date" id="departure" name="departure date" placeholder="4 июля 2017">
+                  </div>
+                <div class="block-people">
+                  <div class="block-adults">
+                    <label for="adults">Взрослые</label>
+                    <button class="button button-minus" type="button"><span>-</span></button>
+                    <input id="adults" type="number" min="1" max="10" placeholder="2">
+                    <button class="button button-plus" type="button"><span>+</span></button>
+                  </div>
+                  <div class="block-children">
+                    <label for="children">Дети</label>
+                    <button class="button button-minus" type="button"><span>-</span></button>
+                    <input id="children" type="number" min="1" max="10" placeholder="0">
+                    <button class="button button-plus" type="button"><span>+</span></button>
+                  </div>
+                </div>
+                  <div class="btn-submit">
+                    <button class="btn" type="submit">Найти</button>
+                  </div>
+                </div>
+              </div>
          </form>
       </section>
    </main>
@@ -160,7 +163,7 @@
          </ul>
       </section>
       <section class="footer__website">
-         <p>Website by</p>
+         <p class="footer-title">Website by</p>
          <a href="https://htmlacademy.ru" target="blank">
             <img class="footer-img" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
          </a>
