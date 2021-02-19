@@ -16,12 +16,12 @@
    <header class="main__header">
       <nav class="main__navigation">
           <div class="cite__navigation">
-            <a class="nav__link" href="#">Информация</a></li>
-            <a class="nav__link" href="catalog.html">Фото и видео</a></li>
-            <a class="main header-logo" href="index.html">
-            <img class="nav-logo" src="img/logo.svg" widht="138" height="70" alt="Логотип Sedona">
+            <a class="nav__info" href="#">Информация</a></li>
+            <a class="nav__foto" href="catalog.html">Фото и видео</a></li>
+            <a class="nav-logo" href="index.html">
+            <img class="header-logo" src="img/logo.svg" widht="138" height="70" alt="Логотип Sedona">
             </a>
-            <a class="nav__link" href="#">Карта штата</a></li>
+            <a class="nav__maps" href="#">Карта штата</a></li>
             <a class="nav__link" href="#">Гостиницы</a></li>
           </div>
       </nav>
@@ -67,74 +67,62 @@
    <section class="booking-section">
       <form action="https://echo.htmlacademy.ru" method="POST">
       <div class="booking-block">
-        <img src="img/Layer 21.jpg" width="135" height="90" alt="Amara Resort & Spa">
          <div class="booking-hotel">
-            <h2 class="booking-hotel__head">Amara Resort & Spa</h2>
-            <p class="booking-hotel__title">Гостиница</p>
-            <p class="booking-hotel__subtitle">От 4000 Р.</p>
-            <button class="button button-details" type="submit">Подробнее</button>
-            <button class="button button-tobook" type="submit">Забронировать</button>
+          <img src="img/Layer 21.jpg" width="135" height="90" alt="Amara Resort & Spa">
+            <div class="booking">
+              <h2 class="booking-hotel__head">Amara Resort & Spa</h2>
+              <div class="hotel-title">
+                <p class="booking-hotel__title">Гостиница</p>
+                <p class="booking-hotel__subtitle">От 4000 Р.</p>
+              </div>
+              <button class="button button-details" href="#">Подробнее</button>
+              <button class="button button-tobook" type="submit">Забронировать</button>
+            </div>
           </div>
-         <div class="booking-block__input">
-            <input type="radio" id="star-5" name="rating" value="5">
-            <label for="star-5" title="Оценка «5»"></label>
-            <input type="radio" id="star-4" name="rating" value="4">
-            <label for="star-4" title="Оценка «4»"></label>
-            <input type="radio" id="star-3" name="rating" value="3">
-            <label for="star-3" title="Оценка «3»"></label>
-            <input type="radio" id="star-2" name="rating" value="2">
-            <label for="star-2" title="Оценка «2»"></label>
-            <input type="radio" id="star-1" name="rating" value="1">
-            <label for="star-1" title="Оценка «1»"></label>
-            <p>Рейтинг: 8,5</p>
+          <div class="rating">
+            <div class="stars">
+              <span class="visually-hidden"></span>
+            </div>
+            <span class="rating-text">Рейтинг: 8,5</span>
+          </div>
          </div>
          <div class="booking-motel">
             <img src="img/Layer 89 copy.jpg" width="135" height="90" alt="Desert Quail Inn">
-            <h2 class="booking-motel__head">Desert Quail Inn</h2>
-            <p class="booking-motel__title">Мотель</p>
-            <p class="booking-motel__subtitle">От 3000 Р.</p>
-            <button class="button button-details" type="submit">Подробнее</button>
-            <button class="button button-tobook" type="submit">Забронировать</button>
+            <div class="booking">
+              <h2 class="booking-motel__head">Desert Quail Inn</h2>
+              <p class="booking-motel__title">Мотель</p>
+              <p class="booking-motel__subtitle">От 3000 Р.</p>
+              <button class="button button-details" type="submit">Подробнее</button>
+              <button class="button button-tobook" type="submit">Забронировать</button>
+            </div>
          </div>
-         <div class="booking-input">
-            <input type="radio" id="star-5" name="rating" value="5">
-            <label for="star-5" title="Оценка «5»"></label>
-            <input type="radio" id="star-4" name="rating" value="4">
-            <label for="star-4" title="Оценка «4»"></label>
-            <input type="radio" id="star-3" name="rating" value="3">
-            <label for="star-3" title="Оценка «3»"></label>
-            <input type="radio" id="star-2" name="rating" value="2">
-            <label for="star-2" title="Оценка «2»"></label>
-            <input type="radio" id="star-1" name="rating" value="1">
-            <label for="star-1" title="Оценка «1»"></label>
-            <p>Рейтинг: 8,9</p>
+         <div class="rating">
+          <div class="stars">
+            <span class="visually-hidden"></span>
+          </div>
+          <span class="rating-text">Рейтинг: 8,9</span>
+        </div>
          </div>
          <div class="booking-apartments">
             <img src="img/Rectangle.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-            <h2 class="booking-apartments__head">Villas at Poco Diablo</h2>
-            <p class="booking-apartments__title">Апартаменты</p>
-            <p class="booking-apartments__subtitle">От 2000 Р.</p>
-            <button class="button button-details" type="submit">Подробнее</button>
-            <button class="button button-tobook" type="submit">Забронировать</button>
+            <div class="booking">
+              <h2 class="booking-apartments__head">Villas at Poco Diablo</h2>
+              <p class="booking-apartments__title">Апартаменты</p>
+              <p class="booking-apartments__subtitle">От 2000 Р.</p>
+              <button class="button button-details" type="submit">Подробнее</button>
+              <button class="button button-tobook" type="submit">Забронировать</button>
+            </div>
          </div>
-         <div class="block-booking__input">
-            <input type="radio" id="star-5" name="rating" value="5">
-            <label for="star-5" title="Оценка «5»"></label>
-            <input type="radio" id="star-4" name="rating" value="4">
-            <label for="star-4" title="Оценка «4»"></label>
-            <input type="radio" id="star-3" name="rating" value="3">
-            <label for="star-3" title="Оценка «3»"></label>
-            <input type="radio" id="star-2" name="rating" value="2">
-            <label for="star-2" title="Оценка «2»"></label>
-            <input type="radio" id="star-1" name="rating" value="1">
-            <label for="star-1" title="Оценка «1»"></label>
-            <p>Рейтинг: 9,2</p>
+         <div class="rating">
+          <div class="stars">
+            <span class="visually-hidden"></span>
+          </div>
+          <span class="rating-text">Рейтинг: 9,2</span>
+        </div>
          </div>
       </div>
    </form>
-
    </section>
-
 </main>
 <footer class="main__footer">
    <section class="footer__contact">
