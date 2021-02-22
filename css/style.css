@@ -16,7 +16,7 @@ width: 1200px;
 margin-left: auto;
 margin-right: auto;
 flex-direction: column;
-font-family: 'PT Sans' sans-serif;
+font-family: 'PT Sans', sans-serif;
 box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 background: var(--basic-white);
 }
@@ -27,91 +27,89 @@ height: auto;
 
 /* Navigation */
 .header-logo{
-position: relative;
-z-index: 1;
-width: 138px;
-height: 70px;
-padding-left: 110px;
-}
-.cite__navigation{
-list-style: none;
-display: flex;
-flex-direction: row;
-/*display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
-}
-.nav__info{
-color: var(--basic-black);;
-font-size: 14px;
-line-height: 26px;
-font-weight: bold;
-text-decoration: none;
-margin-top: 15px;
-margin-left: 72px;
-}
-.nav__foto{
-color: var(--basic-black);;
-font-size: 14px;
-line-height: 26px;
-font-weight: bold;
-text-decoration: none;
-margin-top: 15px;
-margin-left: 134px;
-}
-.nav__maps{
-color: var(--basic-black);;
-font-size: 14px;
-line-height: 26px;
-padding-left: 130px;
-font-weight: bold;
-text-decoration: none;
-margin-top: 15px;
-}
-.nav__link{
-color: var(--basic-black);;
-font-size: 14px;
-line-height: 26px;
-padding-left: 147px;
-font-weight: bold;
-text-decoration: none;
-margin-top: 15px;
-}
-.nav__link::before{
-color: var(--basic-black);
-}
-.nav__link:hover{
-color: var(--basic-blue);
-}
-.nav__link::after{
-opacity: 0.3;
-}
-.nav__maps:before{
-color: var(--basic-black);
-}
-.nav__maps:hover{
-color: var(--basic-blue);
-}
-.nav__maps:after{
-opacity: 0.3;
-}
-.nav__foto:before{
-color: var(--basic-black);
-}
-.nav__foto:hover{
-color: var(--basic-blue);
-}
-.nav__foto:after{
-opacity: 0.3;
-}
-.nav__info:before{
-color: var(--basic-black);
-}
-.nav__info:hover{
-color: var(--basic-blue);
-}
-.nav__info:after{
-opacity: 0.3;
-}
+  position: relative;
+  z-index: 1;
+  width: 138px;
+  height: 70px;
+  padding-left: 110px;
+  }
+  .cite__navigation{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  }
+  .nav__info{
+  color: var(--basic-black);;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 72px;
+  }
+  .nav__foto{
+  color: var(--basic-black);;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 134px;
+  }
+  .nav__maps{
+  color: var(--basic-black);;
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 130px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  }
+  .nav__link{
+  color: var(--basic-black);;
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 147px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  }
+  .nav__link::before{
+  color: var(--basic-black);
+  }
+  .nav__link:hover{
+  color: var(--basic-blue);
+  }
+  .nav__link::after{
+  opacity: 0.3;
+  }
+  .nav__maps:before{
+  color: var(--basic-black);
+  }
+  .nav__maps:hover{
+  color: var(--basic-blue);
+  }
+  .nav__maps:after{
+  opacity: 0.3;
+  }
+  .nav__foto:before{
+  color: var(--basic-black);
+  }
+  .nav__foto:hover{
+  color: var(--basic-blue);
+  }
+  .nav__foto:after{
+  opacity: 0.3;
+  }
+  .nav__info:before{
+  color: var(--basic-black);
+  }
+  .nav__info:hover{
+  color: var(--basic-blue);
+  }
+  .nav__info:after{
+  opacity: 0.3;
+  }
 
 /* Container */
 .container{
@@ -445,8 +443,9 @@ font-weight: normal;
 
 /* search-section */
 .map{
-position: absolute;
-
+width: 1200xp;
+height: 473px;
+object-fit: cover;
 }
 .search-block{
 text-align: center;
@@ -501,16 +500,25 @@ line-height: 26px;
 font-weight: bold;
 }
 .button-block{
-  position: relative;
 padding: 55px 55px 54px 55px;
 margin: auto;
 background: #FFFFFF;
 width: 568px;
-height: 395px;
+height: 481px;
+object-fit: cover;
 box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 .date-arrival{
-margin-left: 10px;
+margin-right: 15px;
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+}
+.date-departure{
+margin-right: 10px;
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
 }
 .input-date__arrival{
 margin-bottom: 29px;
@@ -534,12 +542,12 @@ display: flex;
 justify-content: center;
 margin-bottom: 54px;
 }
-.block-adults label{
+.title-adults{
 font-size: 14px;
 line-height: 26px;
 font-weight: bold;
 }
-.block-children label{
+.title-children{
 font-size: 14px;
 line-height: 26px;
 font-weight: bold;
