@@ -102,39 +102,38 @@
                <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </div>
             <form action="https://echo.htmlacademy.ru" method="POST">
-              <!--<div class="search-block">
-                    <button class="search-section__button" tabindex="0">поиск гостиницы в седоне</button>-->
-                <div class="map">
+              <div class="search-block">
+                <div class="search-form">
+                  <button class="search-section__button" tabindex="0">поиск гостиницы в седоне</button>
+                  <div class="button-block">
+                    <div class="block-date">
+                      <label class="date-arrival" for="arrival">Дата заезда:</label>
+                      <input class="input-date__arrival" type="date" id="arrival" name="arrival date" placeholder="24 Апреля 2017">
+                    </div>
+                    <div class="block-date">
+                      <label class="date-departure" for="departure">Дата выезда:</label>
+                      <input class="input-date__departure" type="date" id="departure" name="departure date" placeholder="4 июля 2017">
+                    </div>
+                  <div class="block-people">
+                    <div class="block-adults">
+                      <label class="title-adults" for="adults">Взрослые</label>
+                      <button class="button-minus" type="button"><span>-</span></button>
+                      <input id="adults" type="number" min="1" max="10" placeholder="0">
+                      <button class="button-plus" type="button"><span>+</span></button>
+                    </div>
+                    <div class="block-children">
+                      <label class="title-children" for="children">Дети</label>
+                      <button class="button-minus" type="button"><span>-</span></button>
+                      <input id="children" type="number" min="1" max="10" placeholder="0">
+                      <button class="button-plus" type="button"><span>+</span></button>
+                    </div>
+                  </div>
+                    <div class="btn-submit">
+                      <button class="btn" type="submit">Найти</button>
+                    </div>
+                  </div>
+                <div>
                   <img class="map-img" src="img/map.jpg" width="1200" height="573">
-                </div>
-                <div class="button-block">
-                  <div class="search-block">
-                    <button class="search-section__button" tabindex="0">поиск гостиницы в седоне</button>
-                  <div class="block-date">
-                    <label class="date-arrival" for="arrival">Дата заезда:</label>
-                    <input class="input-date__arrival" type="date" id="arrival" name="arrival date" placeholder="24 Апреля 2017">
-                  </div>
-                  <div class="block-date">
-                    <label class="date-departure" for="departure">Дата выезда:</label>
-                    <input class="input-date__departure" type="date" id="departure" name="departure date" placeholder="4 июля 2017">
-                  </div>
-                <div class="block-people">
-                  <div class="block-adults">
-                    <label class="title-adults" for="adults">Взрослые</label>
-                    <button class="button-minus" type="button"><span>-</span></button>
-                    <input id="adults" type="number" min="1" max="10" placeholder="0">
-                    <button class="button-plus" type="button"><span>+</span></button>
-                  </div>
-                  <div class="block-children">
-                    <label class="title-children" for="children">Дети</label>
-                    <button class="button-minus" type="button"><span>-</span></button>
-                    <input id="children" type="number" min="1" max="10" placeholder="0">
-                    <button class="button-plus" type="button"><span>+</span></button>
-                  </div>
-                </div>
-                  <div class="btn-submit">
-                    <button class="btn" type="submit">Найти</button>
-                  </div>
                 </div>
               </div>
          </form>
