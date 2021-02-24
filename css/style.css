@@ -496,8 +496,10 @@ font-weight: normal;
 width: 1200xp;
 height: 473px;
 }
-.search-form{
-position: relative;
+.search-form {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
 }
 .search-block{
 text-align: center;
@@ -526,6 +528,10 @@ font-size: 21px;
 line-height: 26px;
 font-weight: bold;
 text-transform: uppercase;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .search-section__button::before{
 color: #FFFFFF;
