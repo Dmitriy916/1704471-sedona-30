@@ -31,115 +31,136 @@
       <img class="filter-img" src="img/background.jpg" width="1200" height="217" alt="background foto">
          <form action="https://echo.htmlacademy.ru" method="POST">
             <div class="infrastructure-block">
-               <div class="section__infrastructure">
+                <div class="section__infrastructure">
                   <h3>Инфраструктура:</h3>
                   <p><input name="swimmingpool" type="checkbox" value="swimmingpool" checked>Бассейн</p>
                   <p><input name="parking" type="checkbox" value="parking">Парковка</p>
                   <p><input name="WiFi" type="checkbox" value="WiFi">Wi-Fi</p>
-               </div>
-               <div class="section-housing">
+                </div>
+                <div class="section-housing">
                   <h3>Тип жилья:</h3>
                   <p><input name="hotel" type="checkbox" value="hotel" checked>Гостиница</p>
                   <p><input name="motel" type="checkbox" value="motel" checked>Мотель</p>
                   <p><input name="apartments" type="checkbox" value="apartments" checked>Апартаменты</p>
-               </div>
-               <div class="section-cost">
+                </div>
+                <div class="section-cost">
                   <p class="section-cost__head">Стоимость в сутки (Р):</p>
+                <div class="block-price">
                   <p class="section-cost__title">от 0</p>
                   <p class="section-cost__subtitle">До 3000</p>
-                  <input class="section-cost__input" type="range" name="value" min="0" max="3000" value="80">
-                  <button class="button-button__show" type="submit">Показать</button>
-               </div>
+                </div>
+                <div class="filter">
+                  <div class="filter-range-wrapper">
+                    <div class="filter-range">
+                      <div class="filter-range-scale">
+                        <div class="filter-range-bar"></div>
+                          </div>
+                            <input class="filter-range-handle min">
+                            <input class="filter-range-handle max" style="left: 80%;">
+                        </div>
+                      </div>
+                        <div class="button-show">
+                          <button class="button-filter" type="submit">Показать</button>
+                        </div>
+                  </div>
             </div>
          </form>
    </section>
    <section class="sorting">
          <div class="sorting-block">
-            <h2 class="sorting-block__head">Найдено: 3</h2>
-            <p class="sorting-block__title">Сортировка:</p>
-            <p class="sorting-block__subtitle">По цене</p>
-            <p class="sorting-block__type">По типу</p>
-            <p class="sorting-block__rating">По рейтингу</p>
+            <h2 class="sorting-block__head" href="#">Найдено: 3</h2>
+            <p class="sorting-block__title" href="#">Сортировка:</p>
+            <button class="button-subtitle" href="#">По цене</button>
+            <button class="button-type" href="#">По типу</button>
+            <button class="button-rating" href="#">По рейтингу</button>
+         </div>
+         <div class="symbols">
+            <p class="symbols1"><span>&#9650<span></p>
+            <p class="symbols2"><span>&#9660</span></p>
          </div>
    </section>
    <section class="booking-section">
       <form action="https://echo.htmlacademy.ru" method="POST">
-      <div class="booking-block">
-         <div class="booking-hotel">
-          <img src="img/Layer 21.jpg" width="135" height="90" alt="Amara Resort & Spa">
-            <div class="booking">
-              <h2 class="booking-hotel__head">Amara Resort & Spa</h2>
-              <div class="hotel-title">
-                <p class="booking-hotel__title">Гостиница</p>
-                <p class="booking-hotel__subtitle">От 4000 Р.</p>
+        <div class="booking-block">
+          <div class="booking-hotel">
+            <img src="img/Layer 21.jpg" width="135" height="90" alt="Amara Resort & Spa">
+              <div class="booking">
+                <button class="booking-hotel__head" href="#"> Amara Resort & Spa</button>
+                  <div class="hotel-title">
+                   <p class="booking-hotel__title">Гостиница</p>
+                    <p class="booking-hotel__subtitle">От 4000 Р.</p>
+                  </div>
+                <button class="button button-details" href="#">Подробнее</button>
+                <button class="button button-tobook" type="submit">Забронировать</button>
               </div>
-              <button class="button button-details" href="#">Подробнее</button>
-              <button class="button button-tobook" type="submit">Забронировать</button>
+          </div>
+            <div class="rating-hotel">
+              <div class="stars-rating">
+                <input id="stars-rating__1" type="radio" class="rating__items" value="1" name="rating">
+                <label for="stars-rating__1" class="rating__label"></label>
+                <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
+                <label for="stars-rating__2" class="rating__label"></label>
+                <input id="stars-rating__3" type="radio" class="rating__items" value="3" name="rating">
+                <label for="stars-rating__3" class="rating__label"></label>
+                <input id="stars-rating__4" type="radio" class="rating__items" value="4" name="rating">
+                <label for="stars-rating__4" class="rating__label"></label>
+              </div>
             </div>
           </div>
-          <div class="rating-hotel">
-            <div class="stars-rating">
-              <input id="stars-rating__4" type="radio" class="rating__items" value="4" name="rating">
-              <label for="stars-rating__4" class="rating__label"></label>
-              <input id="stars-rating__3" type="radio" class="rating__items" value="3" name="rating">
-              <label for="stars-rating__3" class="rating__label"></label>
-              <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
-              <label for="stars-rating__2" class="rating__label"></label>
-              <input id="stars-rating__1" type="radio" class="rating__items" value="1" name="rating">
-              <label for="stars-rating__1" class="rating__label"></label>
-              </div>
-            </div>
             <div>
               <span class="rating-text">Рейтинг: 8,5</span>
             </div>
-          </div>
         </div>
           <div class="booking-motel">
             <img src="img/Layer 89 copy.jpg" width="135" height="90" alt="Desert Quail Inn">
             <div class="booking">
-              <h2 class="booking-motel__head">Desert Quail Inn</h2>
-              <p class="booking-motel__title">Мотель</p>
-              <p class="booking-motel__subtitle">От 3000 Р.</p>
+              <button class="booking-motel__head" href=#>Desert Quail Inn</button>
+                <div class="motel-title">
+                  <p class="booking-motel__title">Мотель</p>
+                  <p class="booking-motel__subtitle">От 3000 Р.</p>
+                </div>
               <button class="button button-details" type="submit">Подробнее</button>
               <button class="button button-tobook" type="submit">Забронировать</button>
             </div>
          </div>
          <div class="rating-motel">
           <div class="stars-rating">
-            <input id="stars-rating__3" type="radio" class="rating__items" value="3" name="rating">
-            <label for="stars-rating__3" class="rating__lebel"></label>
-            <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
-            <label for="stars-rating__2" class="rating__lebel"></label>
             <input id="stars-rating__1" type="radio" class="rating__items" value="1" name="rating">
             <label for="stars-rating__1" class="rating__lebel"></label>
+            <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
+            <label for="stars-rating__2" class="rating__lebel"></label>
+            <input id="stars-rating__3" type="radio" class="rating__items" value="3" name="rating">
+            <label for="stars-rating__3" class="rating__lebel"></label>
             </div>
           </div>
-          <div>
-            <span class="rating-text">Рейтинг: 8,9</span>
-          </div>
+            <div>
+              <span class="rating-text">Рейтинг: 8,9</span>
+            </div>
         </div>
       </div>
          <div class="booking-apartments">
             <img src="img/Rectangle.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             <div class="booking">
-              <h2 class="booking-apartments__head">Villas at Poco Diablo</h2>
-              <p class="booking-apartments__title">Апартаменты</p>
-              <p class="booking-apartments__subtitle">От 2000 Р.</p>
+              <button class="booking-apartments__head" href="#">Villas at Poco Diablo</button>
+                <div class="apartments-title">
+                  <p class="booking-apartments__title">Апартаменты</p>
+                  <p class="booking-apartments__subtitle">От 2000 Р.</p>
+                </div>
               <button class="button button-details" type="submit">Подробнее</button>
               <button class="button button-tobook" type="submit">Забронировать</button>
             </div>
          </div>
          <div class="rating-apartments">
           <div class="stars-rating">
-            <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
-            <label for="stars-rating__2" class="rating__label"></label>
             <input id="stars-rating__1" type="radio" class="rating__items" value="1" name="rating">
             <label for="stars-rating__1" class="rating__label"></label>
+            <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
+            <label for="stars-rating__2" class="rating__label"></label>
             </div>
           </div>
-          <div>
-            <span class="rating-text">Рейтинг: 9,2</span>
-          </div>
+            <div>
+              <span class="rating-text">Рейтинг: 9,2</span>
+            </div>
         </div>
       </div>
       </div>
@@ -156,17 +177,17 @@
    <section class="footer__social">
       <ul class="social">
          <li>
-            <a class="social__button" href="https://twitter.com/">
+            <a class="social__button" href="#">
                <img src="img/twitter.svg" alt="Логотип twitter">
             </a>
          </li>
          <li>
-            <a class="social__button" href="https://www.facebook.com/">
+            <a class="social__button" href="#">
                <img src="img/fb-icon.svg" alt="Логтип facebook">
             </a>
          </li>
          <li>
-            <a class="social__button" href="https://www.youtube.com/">
+            <a class="social__button" href="#">
                <img src="img/youtube.svg" alt="Логотип Youtube">
             </a>
          </li>
