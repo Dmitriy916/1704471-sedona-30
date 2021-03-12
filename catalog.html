@@ -33,15 +33,39 @@
             <div class="infrastructure-block">
                 <div class="section__infrastructure">
                   <h3>Инфраструктура:</h3>
-                  <p><input name="swimmingpool" type="checkbox" value="swimmingpool" checked>Бассейн</p>
-                  <p><input name="parking" type="checkbox" value="parking">Парковка</p>
-                  <p><input name="WiFi" type="checkbox" value="WiFi">Wi-Fi</p>
+                  <label class="check option">
+                    <input class="check__input" name="swimmingpool" type="checkbox" value="swimmingpool" checked>
+                    <span class="check__box"></span>
+                    Бассейн
+                  </label>
+                  <label class="check option">
+                    <input class="check__input" name="parking" type="checkbox" value="parking">
+                    <span class="check__box"></span>
+                    Парковка
+                  </label>
+                  <label class="check option">
+                    <input class="check__input" name="WiFi" type="checkbox" value="WiFi">
+                    <span class="check__box"></span>
+                    Wi-Fi
+                  </label>
                 </div>
                 <div class="section-housing">
                   <h3>Тип жилья:</h3>
-                  <p><input name="hotel" type="checkbox" value="hotel" checked>Гостиница</p>
-                  <p><input name="motel" type="checkbox" value="motel" checked>Мотель</p>
-                  <p><input name="apartments" type="checkbox" value="apartments" checked>Апартаменты</p>
+                  <label class="check option">
+                    <input class="check__input" name="hotel" type="checkbox" value="hotel" checked>
+                    <span class="check__box"></span>
+                    Гостиница
+                  </label>
+                  <label class="check option">
+                    <input class="check__input" name="motel" type="checkbox" value="motel" checked>
+                    <span class="check__box"></span>
+                    Мотель
+                  </label>
+                  <label class="check option">
+                    <input class="check__input" name="apartments" type="checkbox" value="apartments" checked>
+                    <span class="check__box"></span>
+                    Апартаменты
+                  </label>
                 </div>
                 <div class="section-cost">
                   <p class="section-cost__head">Стоимость в сутки (Р):</p>
@@ -70,7 +94,7 @@
          <div class="sorting-block">
             <h2 class="sorting-block__head" href="#">Найдено: 3</h2>
             <p class="sorting-block__title" href="#">Сортировка:</p>
-            <button class="button-subtitle" href="#">По цене</button>
+            <button class="button-price" href="#">По цене</button>
             <button class="button-type" href="#">По типу</button>
             <button class="button-rating" href="#">По рейтингу</button>
          </div>
@@ -95,18 +119,21 @@
               </div>
           </div>
             <div class="rating-hotel">
-              <div class="stars-rating">
-                <input id="stars-rating__1" type="radio" class="rating__items" value="1" name="rating">
-                <label for="stars-rating__1" class="rating__label"></label>
-                <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
-                <label for="stars-rating__2" class="rating__label"></label>
-                <input id="stars-rating__3" type="radio" class="rating__items" value="3" name="rating">
-                <label for="stars-rating__3" class="rating__label"></label>
-                <input id="stars-rating__4" type="radio" class="rating__items" value="4" name="rating">
-                <label for="stars-rating__4" class="rating__label"></label>
+              <div class="block-rating">
+                <label class="ratings label" for="stars-rating__1"></label>
+                <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                <span class="stars__box"></span>
+                <label class="ratings label" for="stars-rating__2"></label>
+                <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                <span class="stars__box"></span>
+                <label class="ratings label" for="stars-rating__3"></label>
+                <input class="rating__input" id="stars-rating__3" type="radio" value="3" name="rating">
+                <span class="stars__box"></span>
+                <label class="ratings label" for="stars-rating__4"></label>
+                <input class="rating__input" id="stars-rating__4" type="radio" value="4" name="rating">
+                <span class="stars__box"></span>
               </div>
             </div>
-          </div>
             <div>
               <span class="rating-text">Рейтинг: 8,5</span>
             </div>
@@ -124,21 +151,24 @@
             </div>
          </div>
          <div class="rating-motel">
-          <div class="stars-rating">
-            <input id="stars-rating__1" type="radio" class="rating__items" value="1" name="rating">
-            <label for="stars-rating__1" class="rating__lebel"></label>
-            <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
-            <label for="stars-rating__2" class="rating__lebel"></label>
-            <input id="stars-rating__3" type="radio" class="rating__items" value="3" name="rating">
-            <label for="stars-rating__3" class="rating__lebel"></label>
+          <div class="block-rating">
+            <label class="ratings lebel" for="stars-rating__1"></label>
+            <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+            <span class="stars__box"></span>
+            <label class="ratings lebel" for="stars-rating__2"></label>
+            <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+            <span class="stars__box"></span>
+            <label class="ratings lebel" for="stars-rating__3"></label>
+            <input class="rating__input" id="stars-rating__3" type="radio" value="3" name="rating">
+            <span class="stars__box"></span>
             </div>
           </div>
-            <div>
-              <span class="rating-text">Рейтинг: 8,9</span>
-            </div>
+        </div>
+        <div>
+          <span class="rating-text">Рейтинг: 8,9</span>
         </div>
       </div>
-         <div class="booking-apartments">
+        <div class="booking-apartments">
             <img src="img/Rectangle.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             <div class="booking">
               <button class="booking-apartments__head" href="#">Villas at Poco Diablo</button>
@@ -149,18 +179,20 @@
               <button class="button button-details" type="submit">Подробнее</button>
               <button class="button button-tobook" type="submit">Забронировать</button>
             </div>
-         </div>
-         <div class="rating-apartments">
-          <div class="stars-rating">
-            <input id="stars-rating__1" type="radio" class="rating__items" value="1" name="rating">
-            <label for="stars-rating__1" class="rating__label"></label>
-            <input id="stars-rating__2" type="radio" class="rating__items" value="2" name="rating">
-            <label for="stars-rating__2" class="rating__label"></label>
+        </div>
+        <div class="rating-apartments">
+          <div class="block-rating">
+            <label class="ratings label" for="stars-rating__1"></label>
+            <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+            <span class="stars__box"></span>
+            <label class="ratings label" for="stars-rating__2"></label>
+            <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+            <span class="stars__box"></span>
             </div>
           </div>
-            <div>
-              <span class="rating-text">Рейтинг: 9,2</span>
-            </div>
+        </div>
+        <div>
+          <span class="rating-text">Рейтинг: 9,2</span>
         </div>
       </div>
       </div>
