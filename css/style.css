@@ -413,7 +413,6 @@ margin-left: 29px;
 margin-top: 23px;
 }
 .booking-hotel{
-display: flex;
 margin-top: 20px;
 }
 .booking-hotel img{
@@ -440,8 +439,7 @@ color: #81B3D2;
 opacity: 0.3;
 }
 .hotel-title{
-display: grid;
-grid-template-columns: 1fr 1fr;
+display: flex;
 }
 .booking-hotel__title{
 margin-top: 8px;
@@ -449,34 +447,6 @@ font-size: 14px;
 line-height: 21px;
 }
 .booking-hotel__subtitle{
-margin-top: 8px;
-font-size: 14px;
-line-height: 21px;
-}
-.motel-title{
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
-.booking-motel__title{
-margin-top: 8px;
-font-size: 14px;
-line-height: 21px;
-}
-.booking-motel__subtitle{
-margin-top: 8px;
-font-size: 14px;
-line-height: 21px;
-}
-.apartments-title{
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
-.booking-apartments__title{
-margin-top: 8px;
-font-size: 14px;
-line-height: 21px;
-}
-.booking-apartments__subtitle{
 margin-top: 8px;
 font-size: 14px;
 line-height: 21px;
@@ -521,82 +491,17 @@ background: #503E33;
 outline: none;
 border: none;
 }
-.booking-motel{
-display: flex;
-width: 1200px;
-border-top: 1px solid #E5E5E5;
-}
-.booking-motel img{
-margin-top: 30px;
-object-fit: contain;
-width: 135px;
-height: 90px;
-margin-left: 73px;
-}
-.booking-motel__head{
-font-weight: bold;
-font-size: 21px;
-line-height: 26px;
-text-transform: uppercase;
-border: none;
-outline: none;
-background: #ffffff;
-}
-.booking-motel__head:hover{
-color: #81B3D2;
-}
-.booking-motel__head:focus{
-color: #81B3D2;
-opacity: 0.3;
-}
-.booking-apartments{
-display: flex;
-width: 1200px;
-border-top: 1px solid #E5E5E5;
-}
-.booking-apartments img{
-margin-top: 30px;
-object-fit: contain;
-width: 135px;
-height: 90px;
-margin-left: 73px;
-}
-.booking-apartments__head{
-font-weight: bold;
-font-size: 21px;
-line-height: 26px;
-text-transform: uppercase;
-border: none;
-outline: none;
-background: #ffffff;
-}
-.booking-apartments__head:hover{
-color: #81B3D2;
-}
-.booking-apartments__head:focus{
-color: #81B3D2;
-opacity: 0.3;
-}
 
 /* stars rating */
 
-.lable{
-display: block;
-}
-.ratings{
-margin: 10px;
-}
-.block-rating{
-float: right;
-transform: translateY(-100px);
+.ratings__label{
+padding: 10px;
 }
 .rating__input{
-position: absolute;
 appearance: none;
 }
 .stars__box{
 position: absolute;
-margin-left: -80px;
 width: 20px;
 height: 20px;
 background-image: url(../img/star.svg);
@@ -607,8 +512,7 @@ border: 1px solid;
 background: #F2F2F2;
 border: none;
 padding: 3px 15px;
-float: right;
-transform: translateY(-25px);
+margin-left: 20px;
 }
 
 /* City */
