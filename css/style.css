@@ -408,15 +408,17 @@ color: var(--basic-black);
 }
 
 /* booking-section */
+.booking-block{
+  margin-top: 30px;
+border-bottom: 1px solid #E5E5E5;
+}
 .booking{
 margin-left: 29px;
-margin-top: 23px;
 }
 .booking-hotel{
-margin-top: 20px;
+display: flex;
 }
 .booking-hotel img{
-margin-top: 30px;
 margin-left: 73px;
 object-fit: contain;
 width: 135px;
@@ -442,12 +444,10 @@ opacity: 0.3;
 display: flex;
 }
 .booking-hotel__title{
-margin-top: 8px;
 font-size: 14px;
 line-height: 21px;
 }
 .booking-hotel__subtitle{
-margin-top: 8px;
 font-size: 14px;
 line-height: 21px;
 }
@@ -506,13 +506,18 @@ width: 20px;
 height: 20px;
 background-image: url(../img/star.svg);
 background-repeat: no-repeat;
+transform: translateY(-65px);
+margin-left: 38%;
 }
 .rating-text{
+width: 110px;
+padding: 3px 12px 3px 15px;
 border: 1px solid;
 background: #F2F2F2;
 border: none;
-padding: 3px 15px;
-margin-left: 20px;
+text-align: center;
+transform: translateY(-40px);
+margin-left: 210%;
 }
 
 /* City */
@@ -776,7 +781,7 @@ justify-content: center;
 margin-bottom: 54px;
 }
 .title-adults{
-margin-right: 0px;
+margin-right: 30px;
 font-size: 14px;
 line-height: 26px;
 font-weight: bold;
@@ -789,6 +794,9 @@ outline: none;
 border: none;
 }
 .title-children{
+padding-right: 25px;
+padding-left: 10px;
+margin-left: 20px;
 width: 68px;
 font-size: 14px;
 line-height: 26px;
