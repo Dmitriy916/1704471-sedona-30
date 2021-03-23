@@ -925,6 +925,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 padding-top: 30px;
+margin-right: 25px;
 }
 .footer-contact{
 margin-left: 70px;
