@@ -16,13 +16,13 @@
    <header class="main__header">
       <nav class="main__navigation">
           <div class="cite__navigation">
-            <a class="nav__info" href="#">Информация</a></li>
-            <a class="nav__foto" href="catalog.html">Фото и видео</a></li>
+            <a class="nav__info" href="#">Информация</a>
+            <a class="nav__foto" href="catalog.html">Фото и видео</a>
             <a class="nav-logo" href="index.html">
-            <img class="header-logo" src="img/logo.svg" widht="138" height="70" alt="Логотип Sedona">
+            <img class="header-logo" src="img/logo.svg" height="70" alt="Логотип Sedona">
             </a>
-            <a class="nav__maps" href="#">Карта штата</a></li>
-            <a class="nav__link" href="#">Гостиницы</a></li>
+            <a class="nav__maps" href="#">Карта штата</a>
+            <a class="nav__link" href="#">Гостиницы</a>
           </div>
       </nav>
 </header>
@@ -79,8 +79,12 @@
                       <div class="filter-range-scale">
                         <div class="filter-range-bar"></div>
                           </div>
-                            <input class="filter-range-handle min">
-                            <input class="filter-range-handle max" style="left: 80%;">
+                            <label class="filter-range-handle filter__min" id="filter-range-min">
+                              <input class="filter-range-handle filter__min" for="filter-range-min">
+                            </label>
+                            <label class="filter-range-handle max" id="filter-range-max">
+                              <input class="filter-range-handle max" style="left: 80%;">
+                            </label>
                         </div>
                       </div>
                       <div class="button-show">
@@ -88,6 +92,7 @@
                     </div>
               </div>
           </div>
+        </div>
       </form>
   </section>
   <section class="sorting">
@@ -119,23 +124,27 @@
             <div class="rating-block">
               <div class="stars-block__row1">
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__1"></label>
-                  <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  <label class="ratings__label" for="stars-rating__1">
+                    <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  </label>
                   <div class="stars__box"></div>
                 </div>
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__2"></label>
-                  <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  <label class="ratings__label" for="stars-rating__2">
+                    <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  </label>
                   <div class="stars__box"></div>
                 </div>
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__3"></label>
-                  <input class="rating__input" id="stars-rating__3" type="radio" value="3" name="rating">
+                  <label class="ratings__label" for="stars-rating__3">
+                    <input class="rating__input" id="stars-rating__3" type="radio" value="3" name="rating">
+                  </label>
                   <div class="stars__box"></div>
                 </div>
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__4"></label>
-                  <input class="rating__input" id="stars-rating__4" type="radio" value="4" name="rating">
+                  <label class="ratings__label" for="stars-rating__4">
+                    <input class="rating__input" id="stars-rating__4" type="radio" value="4" name="rating">
+                  </label>
                   <div class="stars__box"></div>
                 </div>
               </div>
@@ -161,18 +170,21 @@
             <div class="rating-block">
               <div class="stars-block__row2">
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__1"></label>
-                  <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  <label class="ratings__label" for="stars-rating__1">
+                    <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  </label>
                   <div class="stars__box"></div>
                 </div>
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__2"></label>
-                  <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  <label class="ratings__label" for="stars-rating__2">
+                    <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  </label>
                   <div class="stars__box"></div>
                 </div>
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__3"></label>
-                  <input class="rating__input" id="stars-rating__3" type="radio" value="3" name="rating">
+                  <label class="ratings__label" for="stars-rating__3">
+                    <input class="rating__input" id="stars-rating__3" type="radio" value="3" name="rating">
+                    </label>
                   <div class="stars__box"></div>
                 </div>
               </div>
@@ -197,13 +209,15 @@
             <div class="rating-block">
               <div class="stars-block__row3">
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__1"></label>
-                  <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  <label class="ratings__label" for="stars-rating__1">
+                    <input class="rating__input" id="stars-rating__1" type="radio" value="1" name="rating">
+                  </label>
                   <div class="stars__box"></div>
                 </div>
                 <div class="stars-block__item">
-                  <label class="ratings__label" for="stars-rating__2"></label>
-                  <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  <label class="ratings__label" for="stars-rating__2">
+                    <input class="rating__input" id="stars-rating__2" type="radio" value="2" name="rating">
+                  </label>
                   <div class="stars__box"></div>
                 </div>
               </div>
@@ -227,17 +241,17 @@
       <ul class="social">
          <li>
             <a class="social__button" href="#">
-               <img src="img/twitter.svg" alt="Логотип twitter">
+               <img src="img/twitter.svg" width="20" height="20"alt="Логотип twitter">
             </a>
          </li>
          <li>
             <a class="social__button" href="#">
-               <img src="img/fb-icon.svg" alt="Логтип facebook">
+               <img src="img/fb-icon.svg" width="10" height="10" alt="Логтип facebook">
             </a>
          </li>
          <li>
             <a class="social__button" href="#">
-               <img src="img/youtube.svg" alt="Логотип Youtube">
+               <img src="img/youtube.svg" width="20" height="20" alt="Логотип Youtube">
             </a>
          </li>
       </ul>

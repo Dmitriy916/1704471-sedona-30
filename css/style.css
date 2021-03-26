@@ -243,15 +243,16 @@ height: 2px;
 width: 80%;
 background: #FFFFFF;
 }
+
 .filter-range-handle{
 position: absolute;
 top: 50%;
-left: 0%;
+left: 80%;
 transform: translateY(-50%);
 width: 4px;
 height: 4px;
 box-sizing: content-box;
-padding: 0;
+padding: 0px;
 border: 6px solid #ffffff;
 border-radius: 50%;
 background: #ABABAB;
@@ -646,6 +647,9 @@ font-weight: bold;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
+}
+.block__subtitle{
+margin-top: -8px;
 }
 .block__subtitle h2{
 font-size: 21px;
