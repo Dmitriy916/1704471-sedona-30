@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Catalog</title>
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/normalize.css">
-   <link rel="icon" href="img/Favicon.ico">
-   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-   <link rel="apple-touch-icon" href="favicon/180.png">
-   <link rel="manifest" href="manifest.webmanifest">
-   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalog</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="js/nouislider.min.css">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="favicon/180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="page__body">
    <header class="main__header">
@@ -27,75 +27,71 @@
       </nav>
 </header>
 <main class="catalog-block">
-  <section class="filter-section">
-    <img class="filter-img" src="img/background.jpg" width="1200" height="217" alt="background foto">
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <div class="infrastructure-block">
-          <div class="section__infrastructure">
-            <h3>Инфраструктура:</h3>
-              <label class="check option">
-                <input class="check__input" name="swimmingpool" type="checkbox" value="swimmingpool" checked>
-                  <span class="check__box"></span>
-                    Бассейн
-              </label>
-              <label class="check option">
-                <input class="check__input" name="parking" type="checkbox" value="parking">
-                  <span class="check__box"></span>
-                  Парковка
-              </label>
-              <label class="check option">
-                <input class="check__input" name="WiFi" type="checkbox" value="WiFi">
-                  <span class="check__box"></span>
-                  Wi-Fi
-              </label>
-          </div>
-          <div class="section-housing">
-            <h3>Тип жилья:</h3>
-              <label class="check option">
-                <input class="check__input" name="hotel" type="checkbox" value="hotel" checked>
-                <span class="check__box"></span>
-                  Гостиница
-              </label>
-              <label class="check option">
-                <input class="check__input" name="motel" type="checkbox" value="motel" checked>
-                  <span class="check__box"></span>
-                  Мотель
-              </label>
-              <label class="check option">
-                <input class="check__input" name="apartments" type="checkbox" value="apartments" checked>
-                  <span class="check__box"></span>
-                  Апартаменты
-              </label>
-          </div>
-          <div class="section-cost">
-            <p class="section-cost__head">Стоимость в сутки (Р):</p>
-              <div class="block-price">
-                <p class="section-cost__title">от 0</p>
-                <p class="section-cost__subtitle">До 3000</p>
-              </div>
-                <div class="filter">
-                  <div class="filter-range-wrapper">
-                    <div class="filter-range">
-                      <div class="filter-range-scale">
-                        <div class="filter-range-bar"></div>
-                          </div>
-                            <label class="filter-range-handle filter__min" id="filter-range-min">
-                              <input class="filter-range-handle filter__min" for="filter-range-min">
-                            </label>
-                            <label class="filter-range-handle max" id="filter-range-max">
-                              <input class="filter-range-handle max" style="left: 80%;">
-                            </label>
-                        </div>
-                      </div>
-                      <div class="button-show">
-                        <button class="button-filter" type="submit">Показать</button>
-                    </div>
-              </div>
-          </div>
-        </div>
+   <section class="filter-section">
+      <img class="filter-img" src="img/background.jpg" width="1200" height="217" alt="background foto">
+         <form action="https://echo.htmlacademy.ru" method="POST">
+            <div class="infrastructure-block">
+               <div class="section__infrastructure">
+                  <h3>Инфраструктура:</h3>
+               <label class="check option">
+                  <input class="check__input" name="swimmingpool" type="checkbox" value="swimmingpool" checked>
+                     <span class="check__box"></span>
+                     Бассейн
+               </label>
+               <label class="check option">
+                  <input class="check__input" name="parking" type="checkbox" value="parking">
+                     <span class="check__box"></span>
+                     Парковка
+               </label>
+               <label class="check option">
+                  <input class="check__input" name="WiFi" type="checkbox" value="WiFi">
+                     <span class="check__box"></span>
+                     Wi-Fi
+               </label>
+            </div>
+            <div class="section-housing">
+               <h3>Тип жилья:</h3>
+                  <label class="check option">
+                     <input class="check__input" name="hotel" type="checkbox" value="hotel" checked>
+                        <span class="check__box"></span>
+                        Гостиница
+                  </label>
+                  <label class="check option">
+                     <input class="check__input" name="motel" type="checkbox" value="motel" checked>
+                        <span class="check__box"></span>
+                        Мотель
+                  </label>
+                  <label class="check option">
+                     <input class="check__input" name="apartments" type="checkbox" value="apartments" checked>
+                        <span class="check__box"></span>
+                        Апартаменты
+                  </label>
+            </div>
+            <div class="section-cost">
+               <p class="section-cost__head">Стоимость в сутки (Р):</p>
+               <div class="block-price">
+                  <label>
+                     <span class="cost-text">от</span>
+                     <input class="section-cost__price" id="input-0" type="number" min="0" max="3000" placeholder="0">
+                     <span class="cost-text__symbol">₽</span>
+                  </label>
+                  <label>
+                     <span class="cost-text">до</span>
+                     <input class="section-cost__price" id="input-1" type="number" min="0" max="3000" placeholder="3000">
+                     <span class="cost-text__symbol">₽</span>
+                  </label>
+               </div>
+               <div>
+                 <div class="filter-range-bar" id="range-slider"></div>
+               <div class="button-show">
+                  <button class="button-filter" type="submit">Показать</button>
+               </div>
+            </div>
+            </div>
+         </div>
       </form>
-  </section>
-  <section class="sorting">
+</section>
+<section class="sorting">
       <div class="sorting-block">
           <h2 class="sorting-block__head" href="#">Найдено: 3</h2>
           <p class="sorting-block__title" href="#">Сортировка:</p>
@@ -263,5 +259,7 @@
       </a>
    </section>
 </footer>
+<script src="js/nouislider.min.js"></script>
+<script src="js/range-slider.js"></script>
 </body>
 </html>
